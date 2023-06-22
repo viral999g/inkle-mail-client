@@ -1,0 +1,55 @@
+@use "./assets/styles/common.scss";
+@use "./assets/styles/header.scss";
+@use "./assets/styles/sideBar.scss";
+@use "./assets/styles/emailContainer.scss";
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: unset;
+  color: unset;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  .main-content {
+    flex: 1;
+    overflow-y: auto;
+    .body {
+      display: flex;
+      flex-direction: row;
+      min-height: 0;
+      .holder {
+        flex: 1;
+        overflow-y: auto;
+        max-height: 100%;
+      }
+    }
+  }
+}
+
+.container-fluid {
+  padding: 0px;
+}
+
+.row {
+  margin: 0px;
+}
+
+.col-12 {
+  padding: 0px;
+}

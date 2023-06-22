@@ -1,0 +1,35 @@
+.sidebar {
+  background-color: #fff;
+
+  &.narrow {
+    width: auto;
+  }
+
+  .sidebar-nav {
+    .sidebar-item {
+      border-top-right-radius: 24px;
+      border-bottom-right-radius: 24px;
+      li {
+        color: #000;
+        svg {
+          height: 24px;
+          width: 24px;
+        }
+      }
+      &:hover {
+        background-color: gray;
+        li {
+          color: #fff;
+        }
+      }
+
+      &.sidebar-item-active {
+        background-color: lightgray;
+
+        li {
+          color: #000;
+        }
+      }
+    }
+  }
+}

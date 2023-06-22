@@ -1,0 +1,98 @@
+.email-container {
+  background-color: lightgray;
+  border-radius: 16px 16px 0px 0px;
+
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+
+  .search-metadata {
+    p {
+      width: auto;
+    }
+
+    .btn {
+      width: auto;
+    }
+  }
+
+  nav {
+    display: flex;
+    justify-content: end;
+    // padding: 16px 16px;
+    .pagination-container {
+      background-color: gray;
+      border-radius: inherit;
+      margin-left: auto;
+      margin-bottom: 0px;
+      .page-item {
+        border-radius: inherit;
+
+        &.active {
+          background-color: black;
+          span {
+            border-color: #fff;
+          }
+        }
+
+        &.disabled {
+          background-color: #ccc;
+          opacity: 0.5;
+          cursor: not-allowed;
+        }
+
+        .page-link {
+          color: #fff;
+          background-color: transparent;
+          border-radius: 0;
+        }
+      }
+    }
+  }
+
+  .email-list {
+    flex: 1;
+    overflow-y: auto;
+    max-height: 100%;
+  }
+
+  .email-item {
+    background-color: transparent;
+    border: none;
+
+    &:hover {
+      color: #fff;
+      background-color: gray;
+
+      .email-content {
+        border: none;
+      }
+    }
+
+    .email-content {
+      border-style: solid;
+      border-color: black;
+      border-width: 0px 0px 1px 0px;
+    }
+
+    .avatar {
+      border-radius: 50%;
+      background-color: black;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+    }
+    .name {
+      & > * {
+        width: auto;
+      }
+      .tag {
+        background-color: black;
+        color: #fff;
+        border-radius: 4px;
+      }
+    }
+  }
+}

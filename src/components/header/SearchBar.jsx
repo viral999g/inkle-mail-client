@@ -1,4 +1,4 @@
-import { CContainer, CForm, CFormInput } from "@coreui/react";
+import { CButton, CContainer, CForm, CFormInput } from "@coreui/react";
 import React, { useEffect, useState } from "react";
 import {
   createSearchParams,
@@ -31,7 +31,7 @@ const SearchBar = () => {
 
   return (
     <CContainer fluid>
-      <CForm onSubmit={handleOnSubmit}>
+      <CForm className="flex" onSubmit={handleOnSubmit}>
         <CFormInput
           type="text"
           id="search"
@@ -39,6 +39,14 @@ const SearchBar = () => {
           aria-describedby="search"
           value={searchValue}
           onChange={(e) => setSearchValue(e.target.value)}
+        />
+        <CButton
+          disabled={!searchValue}
+          className="ml-16 px-32"
+          component="input"
+          type="submit"
+          color="dark"
+          value="Search"
         />
       </CForm>
     </CContainer>

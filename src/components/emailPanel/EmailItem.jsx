@@ -30,7 +30,7 @@ const EmailItem = ({ body, subject, name, onOpenModal, tag }) => {
               )}
             </div>
             <div>
-              <i>{subject}</i>
+              <i className="fs-18">{subject}</i>
             </div>
             <div>{body}</div>
           </CCol>

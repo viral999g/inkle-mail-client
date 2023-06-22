@@ -17,7 +17,7 @@ const EmailItem = ({ body, subject, name, onOpenModal, tag }) => {
       component="div"
       onClick={onOpenModal}
     >
-      <CContainer fluid>
+      <CContainer className="pr-16" fluid>
         <CRow>
           <CCol className="flex row-center column-center px-16" xs={1}>
             <CircleWithInitial name={name} />

@@ -1,7 +1,6 @@
 import { CCol, CContainer, CListGroupItem, CRow } from "@coreui/react";
-import React, { useState } from "react";
+import React from "react";
 import { useParams } from "react-router-dom";
-import { getRandomName } from "../../utils/services";
 
 const CircleWithInitial = ({ name }) => {
   const initial = name ? name[0].toUpperCase() : "";

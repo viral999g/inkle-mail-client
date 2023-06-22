@@ -10,7 +10,6 @@ import {
 } from "./constants";
 
 export const getMails = () => {
-  console.log("getMails");
   return { type: GET_MAILS };
 };
 

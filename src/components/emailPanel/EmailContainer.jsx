@@ -40,7 +40,7 @@ const EmailContainer = () => {
       setCurrentPage(1);
       dispatch(getFilteredData({ tag, searchedValue }));
     }
-  }, [data, tag, searchedValue]);
+  }, [data, tag, searchedValue, dispatch]);
 
   if (loading) {
     <EmailShimmer />;

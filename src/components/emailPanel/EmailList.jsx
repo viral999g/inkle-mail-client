@@ -19,7 +19,7 @@ const EmailList = ({ emails = [] }) => {
         setShowModal={setShowModal}
         email={emailDetails}
       />
-      <CListGroup className="email-list">
+      <CListGroup className="email-list py-16">
         {emails.map((email) => (
           <EmailItem
             onOpenModal={() => openModalHandler(email)}
